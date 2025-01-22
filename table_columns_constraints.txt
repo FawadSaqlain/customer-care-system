@@ -1,0 +1,466 @@
+Table: Employees
+  Column: EmployeeID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: LastName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 20
+  Column: FirstName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 10
+  Column: Title
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 30
+  Column: TitleOfCourtesy
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 25
+  Column: BirthDate
+    Default: None
+    Nullable: YES
+    Data Type: datetime
+    Max Length: None
+  Column: HireDate
+    Default: None
+    Nullable: YES
+    Data Type: datetime
+    Max Length: None
+  Column: Address
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 60
+  Column: City
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: Region
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: PostalCode
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 10
+  Column: Country
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: HomePhone
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 24
+  Column: Extension
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 4
+  Column: Photo
+    Default: None
+    Nullable: YES
+    Data Type: image
+    Max Length: 2147483647
+  Column: Notes
+    Default: None
+    Nullable: YES
+    Data Type: ntext
+    Max Length: 1073741823
+  Column: ReportsTo
+    Default: None
+    Nullable: YES
+    Data Type: int
+    Max Length: None
+  Column: PhotoPath
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 255
+
+Table: Categories
+  Column: CategoryID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: CategoryName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 15
+  Column: Description
+    Default: None
+    Nullable: YES
+    Data Type: ntext
+    Max Length: 1073741823
+  Column: Picture
+    Default: None
+    Nullable: YES
+    Data Type: image
+    Max Length: 2147483647
+
+Table: Customers
+  Column: CustomerID
+    Default: None
+    Nullable: NO
+    Data Type: nchar
+    Max Length: 5
+  Column: CompanyName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 40
+  Column: ContactName
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 30
+  Column: ContactTitle
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 30
+  Column: Address
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 60
+  Column: City
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: Region
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: PostalCode
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 10
+  Column: Country
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: Phone
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 24
+  Column: Fax
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 24
+
+Table: Shippers
+  Column: ShipperID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: CompanyName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 40
+  Column: Phone
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 24
+
+Table: Suppliers
+  Column: SupplierID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: CompanyName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 40
+  Column: ContactName
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 30
+  Column: ContactTitle
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 30
+  Column: Address
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 60
+  Column: City
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: Region
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: PostalCode
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 10
+  Column: Country
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: Phone
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 24
+  Column: Fax
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 24
+  Column: HomePage
+    Default: None
+    Nullable: YES
+    Data Type: ntext
+    Max Length: 1073741823
+
+Table: Orders
+  Column: OrderID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: CustomerID
+    Default: None
+    Nullable: YES
+    Data Type: nchar
+    Max Length: 5
+  Column: EmployeeID
+    Default: None
+    Nullable: YES
+    Data Type: int
+    Max Length: None
+  Column: OrderDate
+    Default: None
+    Nullable: YES
+    Data Type: datetime
+    Max Length: None
+  Column: RequiredDate
+    Default: None
+    Nullable: YES
+    Data Type: datetime
+    Max Length: None
+  Column: ShippedDate
+    Default: None
+    Nullable: YES
+    Data Type: datetime
+    Max Length: None
+  Column: ShipVia
+    Default: None
+    Nullable: YES
+    Data Type: int
+    Max Length: None
+  Column: Freight
+    Default: ((0))
+    Nullable: YES
+    Data Type: money
+    Max Length: None
+  Column: ShipName
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 40
+  Column: ShipAddress
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 60
+  Column: ShipCity
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: ShipRegion
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+  Column: ShipPostalCode
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 10
+  Column: ShipCountry
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 15
+
+Table: Products
+  Column: ProductID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: ProductName
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 40
+  Column: SupplierID
+    Default: None
+    Nullable: YES
+    Data Type: int
+    Max Length: None
+  Column: CategoryID
+    Default: None
+    Nullable: YES
+    Data Type: int
+    Max Length: None
+  Column: QuantityPerUnit
+    Default: None
+    Nullable: YES
+    Data Type: nvarchar
+    Max Length: 20
+  Column: UnitPrice
+    Default: ((0))
+    Nullable: YES
+    Data Type: money
+    Max Length: None
+  Column: UnitsInStock
+    Default: ((0))
+    Nullable: YES
+    Data Type: smallint
+    Max Length: None
+  Column: UnitsOnOrder
+    Default: ((0))
+    Nullable: YES
+    Data Type: smallint
+    Max Length: None
+  Column: ReorderLevel
+    Default: ((0))
+    Nullable: YES
+    Data Type: smallint
+    Max Length: None
+  Column: Discontinued
+    Default: ((0))
+    Nullable: NO
+    Data Type: bit
+    Max Length: None
+
+Table: Order Details
+  Column: OrderID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: ProductID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: UnitPrice
+    Default: ((0))
+    Nullable: NO
+    Data Type: money
+    Max Length: None
+  Column: Quantity
+    Default: ((1))
+    Nullable: NO
+    Data Type: smallint
+    Max Length: None
+  Column: Discount
+    Default: ((0))
+    Nullable: NO
+    Data Type: real
+    Max Length: None
+
+Table: CustomerCustomerDemo
+  Column: CustomerID
+    Default: None
+    Nullable: NO
+    Data Type: nchar
+    Max Length: 5
+  Column: CustomerTypeID
+    Default: None
+    Nullable: NO
+    Data Type: nchar
+    Max Length: 10
+
+Table: CustomerDemographics
+  Column: CustomerTypeID
+    Default: None
+    Nullable: NO
+    Data Type: nchar
+    Max Length: 10
+  Column: CustomerDesc
+    Default: None
+    Nullable: YES
+    Data Type: ntext
+    Max Length: 1073741823
+
+Table: Region
+  Column: RegionID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: RegionDescription
+    Default: None
+    Nullable: NO
+    Data Type: nchar
+    Max Length: 50
+
+Table: Territories
+  Column: TerritoryID
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 20
+  Column: TerritoryDescription
+    Default: None
+    Nullable: NO
+    Data Type: nchar
+    Max Length: 50
+  Column: RegionID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+
+Table: EmployeeTerritories
+  Column: EmployeeID
+    Default: None
+    Nullable: NO
+    Data Type: int
+    Max Length: None
+  Column: TerritoryID
+    Default: None
+    Nullable: NO
+    Data Type: nvarchar
+    Max Length: 20
+
