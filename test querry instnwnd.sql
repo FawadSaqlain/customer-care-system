@@ -1,4 +1,5 @@
 USE instnwnd
+SELECT * from Employees , Categories , Orders , Products , Shippers , Suppliers , Region , Territories , EmployeeTerritories
 
 -- SELECT
 --     EmployeeID,
@@ -47,7 +48,6 @@ USE instnwnd
 
 SELECT *
 FROM Shippers
-WHERE CompanyName = 'London'
 
 SELECT
     CASE 
