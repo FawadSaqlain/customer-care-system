@@ -47,7 +47,7 @@ SELECT * from Employees , Categories , Orders , Products , Shippers , Suppliers 
 --     City = 'London' AND Photo IS NULL;
 
 SELECT *
-FROM Shippers
+FROM Order Details
 
 SELECT
     CASE 
