@@ -1,0 +1,61 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.1 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="Ja9PysXdnmIyYlENBZke">
+    <mxGraphModel dx="1084" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-2" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry width="1100" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-4" value="sender mail" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry width="150" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-5" value="subject" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" width="150" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-6" value="classification" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="450" width="150" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-7" value="date / time" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="750" width="150" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-10" value="body" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" width="150" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-11" value="response" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" width="150" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry y="560" width="690" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="24" y="694" width="350" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-17" value="subject" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="44" y="714" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-19" value="body" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="64" y="784" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-21" value="date / time" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="314" y="694" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="994" width="350" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-22" value="subject" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="1014" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-23" value="date / time" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="604" y="994" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-24" value="body" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1084" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bnMvLLaEUsyFo6FnfVfC-26" value="Sender name / Email / ID&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="610" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
