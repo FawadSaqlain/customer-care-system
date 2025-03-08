@@ -76,18 +76,19 @@ WSGI_APPLICATION = 'customercare.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'instnwnd',  # Your database name
-        'USER': '',  # Leave empty for Windows Authentication
-        'PASSWORD': '',  # Leave empty for Windows Authentication
-        'HOST': 'localhost',  # Or your server name
-        'PORT': '',  # Leave blank for default
+        'ENGINE': 'mssql',  # Updated from 'mssql'
+        'NAME': 'instnwnd',
+        'USER': '',  # For Windows Authentication, leave these blank
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
         'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',  # Make sure the driver is installed
-            'extra_params': 'Trusted_Connection=yes;',  # This enables Windows Authentication
+            'driver': 'ODBC Driver 17 for SQL Server',
+            'extra_params': 'Trusted_Connection=yes;',
         },
     }
 }
+
 
 
 # Password validation
