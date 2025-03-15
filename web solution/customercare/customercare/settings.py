@@ -88,6 +88,7 @@ DATABASES = {
         },
     }
 }
+print(f'connection is done {DATABASES}')
 
 
 

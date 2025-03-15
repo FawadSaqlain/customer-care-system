@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'customercare_css\style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'customercare_css/style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATABASE</title>
 </head>
-
 <body>
-
     <select id="table_name_dr">
         <option value="Employees">Employees</option>
         <option value="Categories">Categories</option>
         <option value="Customers">Customers</option>
         <option value="Orders">Orders</option>
         <option value="Products">Products</option>
-        <option value="Shippers">Shippers</option> <!-- Capital S -->
+        <option value="Shippers">Shippers</option>
         <option value="Suppliers">Suppliers</option>
-        <option value="Order Details">Order Details</option> <!-- Space, if that's the real DB table name -->
+        <option value="Order Details">Order Details</option>
         <option value="Region">Region</option>
         <option value="Territories">Territories</option>
         <option value="EmployeeTerritories">EmployeeTerritories</option>
+        <option value="complaints">complaints</option>
     </select>
-
 
     <button id="fetchData">Fetch Data</button>
 
@@ -53,15 +50,11 @@
     <p>No Data Found</p>
     {% endif %}
 
-
     <script>
         document.getElementById("fetchData").addEventListener("click", function () {
             let tableName = document.getElementById("table_name_dr").value;
             window.location.href = "/" + tableName + "/";
         });
     </script>
-
-
 </body>
-
 </html>
