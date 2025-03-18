@@ -38,9 +38,10 @@ def log_complaint(email, subject, body):
     with connection.cursor() as cursor:
         complaint_id = str(uuid.uuid4())  # Generate a unique ID for the complaint
         cursor.execute('''
-            INSERT INTO complaints (id, email, subject, body)
-            VALUES (?, ?, ?, ?)
+        INSERT INTO complaints (id, email, subject, body)
+        VALUES (%s, %s, %s, %s)
         ''', (complaint_id, email, subject, body))
+
         cursor.commit()
         cursor.close()
     return complaint_id

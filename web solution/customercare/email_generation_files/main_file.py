@@ -18,15 +18,16 @@ import google.generativeai as genai
 # from sqlalchemy import create_engine
 # import pyodbc
 # importing header files
-from. import fetch_mail as fm
-from. import make_classification as mc
-from. import complain_logs as cl
-from. import answer_query as aq
-from. import organize_responces_send_it as orsi
+
+from . import make_classification as mc
+from . import fetch_mail as fm
+from . import complain_logs as cl
+from . import answer_query as aq
+from . import organize_responces_send_it as orsi
 
 # Configure the Google Generative AI API
 genai.configure(api_key="AIzaSyBA1FJ4OZsCDYla57Muc6EMS04ntEolrbE")
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Load spaCy's model for Named Entity Recognition (NER)
 # nlp_spacy = spacy.load("en_core_web_sm")
@@ -95,4 +96,5 @@ def process_emails():
         if response:
             messaage=orsi.generate_message_from_response(subject,body,response,model)
             orsi.send_email(sender, f"Re: {subject}", messaage)
-
+# while True:
+#     process_emails()
